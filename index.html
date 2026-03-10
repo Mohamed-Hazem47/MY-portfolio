@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hazem Ahmed | Full Stack .NET Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-theme="dark">
+    <div class="page-backdrop"></div>
+
+    <!-- Theme toggle (visible in sidebar and on mobile) -->
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode"
+        title="Toggle theme">
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">☀️</span>
+        <span class="theme-icon theme-icon-light" aria-hidden="true">🌙</span>
+    </button>
+
+    <!-- Fixed Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-inner">
+            <a href="#hero" class="site-logo" aria-label="Mohamed Hazem Ahmed – Home">
+                <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <rect width="40" height="40" rx="10" fill="url(#logo-bg)" />
+                    <path d="M10 28V12l6 10 6-10v16h4V12l-6 10-6-10v16h-4z" fill="#0c1016" />
+                    <defs>
+                        <linearGradient id="logo-bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#14b8a6" />
+                            <stop offset="1" stop-color="#10b981" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">MHA</span>
+            </a>
+            <div class="profile-block">
+                <div class="profile-image-wrap">
+                    <img src="profile.jpg" alt="Mohamed Hazem Ahmed" class="profile-image"
+                        onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=320&h=320&fit=crop'">
+                </div>
+                <h1 class="sidebar-name">Mohamed Hazem Ahmed</h1>
+                <p class="sidebar-headline">Full Stack .NET Developer · Computer Engineering Student at HIET</p>
+                <p class="sidebar-location">Damanhour, El-Beheira, Egypt</p>
+            </div>
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="#hero" class="sidebar-link">About</a>
+                <a href="#services" class="sidebar-link">Services</a>
+                <a href="#metrics" class="sidebar-link">Power Metrics</a>
+                <a href="#experience" class="sidebar-link">Experience</a>
+                <a href="#projects" class="sidebar-link">Projects</a>
+                <a href="#skills" class="sidebar-link">Technical </a>
+                <a href="#education" class="sidebar-link">Education</a>
+            </nav>
+            <div class="sidebar-contact">
+                <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                    class="contact-icon" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/mohamed-hazem-ahmed-30099a374/" target="_blank"
+                    rel="noopener noreferrer" class="contact-icon" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:mohamedhazem20040@gmail.com" class="contact-icon email" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <!-- 1. Large Hero with Profile Image -->
+        <header class="hero-banner hero-large" id="hero">
+            <div class="code-stream" aria-hidden="true">
+                <div class="code-line">public class Program { static void Main() {</div>
+                <div class="code-line">var dev = new Developer("Mohamed");</div>
+                <div class="code-line">dev.Skills.Add(".NET"); dev.Skills.Add("C#");</div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-profile-wrap">
+                    <img src="profile.jpg" alt="Mohamed Hazem Ahmed" class="hero-profile-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop'">
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-name">Mohamed Hazem Ahmed</h1>
+                    <p class="hero-headline">Full Stack .NET Developer · Computer Engineering Student at HIET</p>
+                    <p class="hero-summary">A motivated fast learner with strong foundations in C#, .NET, and web
+                        development, currently pursuing a Bachelor of Engineering in Computer Engineering at the High
+                        Institute of Engineering and Technology.</p>
+                    <div class="hero-ctas">
+                        <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary">View My GitHub</a>
+                        <a href="mailto:mohamedhazem20040@gmail.com" class="btn btn-contact">Contact Me</a>
+                        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Download
+                            Full CV</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. Power Metrics -->
+        <section class="section metrics-section" id="metrics">
+            <h2 class="section-label">Power Metrics</h2>
+            <div class="power-metrics-grid">
+                <article class="glass-card power-metric">
+                    <span class="power-metric-value" data-target="160" data-suffix="+">0</span>
+                    <span class="power-metric-unit">Hours</span>
+                    <p class="power-metric-desc">Intensive training in C#, .NET, and web development</p>
+                </article>
+                <article class="glass-card power-metric">
+                    <span class="power-metric-value" data-target="50" data-suffix="+">0</span>
+                    <span class="power-metric-unit">Problems</span>
+                    <p class="power-metric-desc">Coding challenges solved across C# and Python</p>
+                </article>
+                <article class="glass-card power-metric">
+                    <span class="power-metric-value" data-target="50" data-suffix="%">0</span>
+                    <span class="power-metric-unit">Better Code</span>
+                    <p class="power-metric-desc">Improvement in maintainability through modular design</p>
+                </article>
+                <article class="glass-card power-metric">
+                    <span class="power-metric-value" data-target="50" data-suffix="%">0</span>
+                    <span class="power-metric-unit">Efficiency</span>
+                    <p class="power-metric-desc">Growth in coding accuracy within just 6 months</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 2.5 Services -->
+        <section class="section services-section" id="services">
+            <h2 class="section-label">Core Services</h2>
+            <div class="project-cards">
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge active" style="width: max-content;">Full Stack</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">Web Development</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I design and develop robust, scalable, and responsive web applications tailored to your business needs, handling everything from the UI to the server-side logic.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>ASP.NET Core, C#, HTML/CSS, JS, Tailwind CSS</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>Custom web portals, e-commerce platforms, responsive corporate sites.</p>
+                    </div>
+                </article>
+                
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge active" style="width: max-content;">.NET Core</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">Backend Development</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I build secure, high-performance backend systems that power fast and reliable applications, ensuring scalable and maintainable infrastructures.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>C#, ASP.NET Core, .NET 8, LINQ, Dependency Injection</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>Scalable server architectures, authentication systems (JWT), background services.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge cert" style="width: max-content;">Architecture</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">Database Design</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I design optimized and normalized relational database schemas that ensure data integrity, security, and fast retrieval for growing applications.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>SQL Server, Entity Framework Core, T-SQL</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>Custom relational schemas, query optimization, secure data migrations.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge active" style="width: max-content;">Integration</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">API Development</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I develop clean, well-documented, and secure RESTful APIs to facilitate seamless communication between different software systems and services.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>ASP.NET Core Web API, Swagger, Postman, JSON</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>Custom REST endpoints, 3rd-party tool integrations, API documentation.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge active" style="width: max-content;">Design</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">UI/UX Design</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I bridge the gap between design and development by creating intuitive, modern, and aesthetically pleasing user interfaces before a single line of code is written.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>Figma, Wireframing, Rapid Prototyping</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>High-fidelity UI mockups, interactive prototypes, responsive design outlines.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card project-card-body">
+                    <span class="experience-badge in-progress" style="width: max-content;">DevOps</span>
+                    <h3 class="case-study-title" style="margin-bottom: 0.5rem; margin-top: 0.25rem;">Website Optimization</h3>
+                    <p class="project-card-desc" style="flex-grow: 1;">I provide ongoing technical support, refactoring, and optimization to ensure your .NET applications run at peak efficiency.</p>
+                    <div class="project-detail-block">
+                        <h4 class="project-detail-label">Key Technologies</h4>
+                        <p>C#, SQL Profiler, Application Insights, Git</p>
+                    </div>
+                    <div class="project-detail-block project-detail-security" style="border-top: none; padding-top: 0; margin-top: 0.5rem;">
+                        <h4 class="project-detail-label">Example Deliverables</h4>
+                        <p>Performance audits, security patch implementations, structural application upgrades.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Professional Experience -->
+        <section class="section experience-section" id="experience">
+            <h2 class="section-label">Professional Experience</h2>
+            <div class="experience-timeline">
+                <article class="glass-card experience-card">
+                    <div class="experience-header">
+                        <span class="experience-badge active">Active</span>
+                        <span class="experience-duration">November 2025 – May 2026</span>
+                    </div>
+                    <h3 class="experience-role">Emerging Full Stack Engineer</h3>
+                    <p class="experience-org">Digital Egypt Pioneers Initiative (DEPI) · Full Stack .NET Track</p>
+                    <ul class="experience-list">
+                        <li>✅ <strong>Delivered 120+ hours</strong> of intensive training — C#, .NET, and modern web
+                            development fundamentals mastered.</li>
+                        <li>✅ <strong>ASP.NET Core &amp; Entity Framework</strong> — applied in data-driven web API
+                            architecture as completed milestones.</li>
+                        <li>✅ <strong>Built 3+ applications</strong> with clean OOP architecture, each featuring
+                            exception handling and modular design.</li>
+                        <li>✅ <strong>Solved 50+ algorithmic challenges</strong> across C# and Python, sharpening
+                            problem-solving accuracy by 40%.</li>
+                    </ul>
+                </article>
+                <article class="glass-card experience-card">
+                    <div class="experience-header">
+                        <span class="experience-badge cert">Certification</span>
+                    </div>
+                    <h3 class="experience-role">Microsoft Cybersecurity Fundamentals</h3>
+                    <p class="experience-org">Sprints & Microsoft</p>
+                    <ul class="experience-list">
+                        <li>Gained foundational knowledge in <strong>securing networks</strong>, identifying digital
+                            threats, and understanding cybersecurity infrastructure.</li>
+                        <li>Applied security mindsets to software development to ensure <strong>data integrity</strong>
+                            and protected user environments.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Featured Projects -->
+        <section class="section projects-section" id="projects">
+            <h2 class="section-label">Projects</h2>
+            <p class="section-intro">All projects are hosted on <a href="https://github.com/Mohamed-Hazem47"
+                    target="_blank" rel="noopener noreferrer">GitHub</a> with a <strong>README.md</strong> that serves
+                as a professional manual (setup, architecture, and usage).</p>
+            <div class="project-cards">
+                <article class="project-card glass-card">
+                    <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                        class="project-card-image-link">
+                        <div class="project-card-image" aria-hidden="true">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80" alt="Smart Garage System concept"
+                                class="project-screenshot">
+                        </div>
+                    </a>
+                    <div class="project-card-body">
+                        <span class="case-study-badge dotnet">C# · .NET · Database</span>
+                        <h3 class="case-study-title">Smart Garage System</h3>
+                        <p class="project-card-desc">Automated management for vehicle entry, exit, and space allocation.
+                            Real-time slot tracking, billing by duration, secure entry-code system.</p>
+                        <div class="project-detail-block">
+                            <h4 class="project-detail-label">Technical Decisions</h4>
+                            <p>Used a <strong>Dictionary</strong> for slot tracking to achieve <strong>O(1)</strong>
+                                lookup by slot ID and efficient resource management; avoided List/Array to prevent
+                                linear scans at scale.</p>
+                        </div>
+                        <div class="project-detail-block project-detail-security">
+                            <h4 class="project-detail-label">Security</h4>
+                            <p>Integrated <strong>input validation</strong> and <strong>exception handling</strong> to
+                                prevent common injection and invalid-state vulnerabilities, following <strong>Microsoft
+                                    Cybersecurity Fundamentals</strong> (Sprints × Microsoft).</p>
+                        </div>
+                        <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                            class="project-link">View on GitHub →</a>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                        class="project-card-image-link">
+                        <div class="project-card-image" aria-hidden="true">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80" alt="Inventory Management System concept"
+                                class="project-screenshot">
+                        </div>
+                    </a>
+                    <div class="project-card-body">
+                        <span class="case-study-badge dotnet">C# · Web API · Full Stack</span>
+                        <h3 class="case-study-title">Inventory Management System</h3>
+                        <p class="project-card-desc">Optimized data retrieval for <strong>1,000+ inventory
+                                items</strong> using structured indexing in C#. Low-inventory alerts, sales reports;
+                            <strong>30% improvement in code readability</strong> through modular design.
+                        </p>
+                        <div class="project-detail-block">
+                            <h4 class="project-detail-label">Full Stack Architecture</h4>
+                            <p>Console core engineered with <strong>Web API</strong>-ready separation of concerns and a
+                                <strong>HTML/CSS/JS frontend</strong> layer — demonstrating end-to-end delivery
+                                capability.
+                            </p>
+                        </div>
+                        <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                            class="project-link">View on GitHub →</a>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                        class="project-card-image-link">
+                        <div class="project-card-image" aria-hidden="true">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80" alt="ATM System concept" class="project-screenshot">
+                        </div>
+                    </a>
+                    <div class="project-card-body">
+                        <span class="case-study-badge dotnet">C# Console Application</span>
+                        <h3 class="case-study-title">ATM System</h3>
+                        <p class="project-card-desc">Full banking simulation with <strong>8+ features</strong>
+                            (authentication, balance, deposit/withdrawal). <strong>100+ test transactions</strong> with
+                            zero critical errors; <strong>50% reduction in runtime errors</strong> via structured
+                            exception handling.</p>
+                        <div class="project-detail-block project-detail-security">
+                            <h4 class="project-detail-label">Security</h4>
+                            <p>Integrated <strong>input validation</strong> and <strong>exception handling</strong> to
+                                prevent common injection vulnerabilities, following <strong>Microsoft Cybersecurity
+                                    Fundamentals</strong> (Sprints × Microsoft).</p>
+                        </div>
+                        <a href="https://github.com/Mohamed-Hazem47" target="_blank" rel="noopener noreferrer"
+                            class="project-link">View on GitHub →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Technical Ecosystem (Skill Cloud) -->
+        <section class="section skills-section" id="skills">
+            <h2 class="section-label">Technical Ecosystem</h2>
+            <div class="skill-cloud">
+                <div class="glass-card skill-category">
+                    <div class="skill-category-icon" aria-hidden="true">⌨️</div>
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-cyan">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <div class="skill-category-icon" aria-hidden="true">🌐</div>
+                    <h3 class="skill-category-title">Web & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag tag-cyan">.NET Framework</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <div class="skill-category-icon" aria-hidden="true">🧠</div>
+                    <h3 class="skill-category-title">Core Fundamentals</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Database Fundamentals</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <div class="skill-category-icon" aria-hidden="true">🔒</div>
+                    <h3 class="skill-category-title">Security</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Cybersecurity Fundamentals</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-category">
+                    <div class="skill-category-icon" aria-hidden="true">🛠️</div>
+                    <h3 class="skill-category-title">Tools &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-cyan">Git</span>
+                        <span class="skill-tag tag-cyan">GitHub</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Education & Background -->
+        <section class="section education-section" id="education">
+            <h2 class="section-label">Education & Background</h2>
+            <div class="education-layout">
+                <div class="glass-card timeline-card education-main">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 – 2027 (Expected)</span>
+                                <h3 class="timeline-title">High Institute of Engineering and Technology</h3>
+                                <p class="timeline-subtitle">Bachelor of Engineering in Computer Engineering</p>
+                                <p class="timeline-location">El-Beheira, Egypt</p>
+                                <div class="timeline-focus">
+                                    <h4 class="case-study-label">Core Focus</h4>
+                                    <p>Specialized coursework in programming fundamentals, Object-Oriented Programming
+                                        (OOP), Data Structures, Algorithms, and Database Fundamentals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-side">
+                    <div class="glass-card merit-card">
+                        <h3 class="merit-title">Academic Standing</h3>
+                        <p class="merit-gpa">Cumulative GPA: <strong>2.7</strong> <span class="merit-badge">Very
+                                Good</span></p>
+                        <p class="merit-specialization">Specialized in <strong>Algorithms</strong> & <strong>Database
+                                Fundamentals</strong>.</p>
+                    </div>
+                    <div class="glass-card languages-card">
+                        <h3 class="merit-title">Languages</h3>
+                        <ul class="lang-list">
+                            <li><span class="lang-name">Arabic</span> <span class="lang-level">Native</span></li>
+                            <li><span class="lang-name">English</span> <span class="lang-level">Very Good</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer" id="contact">
+            <p>Mohamed Hazem Ahmed &copy; 2026</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
